@@ -1,0 +1,120 @@
+html,body{
+ 
+	height: 100%;
+    margin: 0;
+
+}
+
+
+.homeBackground {
+  
+  background-image: url("../images/homeBackground2.jpg");
+  color: #fff;
+  
+  
+  height: 100%; 
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  animation: backImage;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes backImage{
+	0%{background-image: url("../images/homeBackground2.jpg");}
+	50%{background-image: url("../images/homeBackground1.jpg");}
+	100%{background-image: url("../images/homeBackground2.jpg");}
+}
+
+.namePosition{
+	position: absolute;
+	left: 40%;
+	bottom:  -20%;
+	color: #05E9DD;
+	font-size: 4vw;
+	font-family: helvetica;
+	animation: name;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards; 
+}
+
+
+@keyframes name{
+	0%{bottom:  -20%;left: 40%}
+	100%{left: 40%;bottom:  15%;}
+}
+
+
+.headingPosition{
+	position: absolute;
+	left: 35%;
+	top: -20%;
+	color: #9D0DEE;
+	font-size: 5vw;
+	font-family: helvetica;
+	font-style: italic;
+	font-weight: bold; 
+	animation: heading;
+	animation-duration: 4s;
+	animation-delay: 2s; 
+	animation-fill-mode: forwards;
+}
+
+@keyframes heading{
+	0%{top: -20%;left: 35%}
+	100%{left: 35%;top: 4%;}
+}
+
+
+
+.leftLink{
+	position: absolute;
+	left: -20%;
+	top: 60%;
+	color: #DCE905;
+	font-size: 1.5vw;
+	font-family: sans-serif;
+	font-style: initial; 
+	font-weight: bold;
+	text-decoration: none;
+	animation: lLink;
+	animation-duration: 4s;
+	animation-delay: 2s; 
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes lLink{
+	0%{top: 60%;left: -20%}
+	100%{left: 1%;top: 60%;}
+}
+
+
+.rightLink{
+	position: absolute;
+	right: -20%;
+	top: 60%;
+	color: #DCE905;
+	font-style: italic;
+	font-size: 1.5vw;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	animation: rLink;
+	animation-duration: 4s;
+	animation-delay: 2s; 
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes rLink{
+	0%{top: 60%;right:  -20%}
+	100%{right:  1%;top: 60%;}
+}
+
