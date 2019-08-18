@@ -1,0 +1,164 @@
+body{
+	background: #023A38;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.container {
+
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px; 
+
+}
+
+.wrapper{
+	border: 10px #fff solid;
+	background-image: url("../images/nab2.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+}
+
+.wrapper2{
+	border: 10px #fff solid;
+	background-image: url("../images/nab1.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+}
+
+.wrapper:hover , .wrapper2:hover{
+	opacity: 1;
+}
+
+.headText{
+font-size: 30px; 
+color: #07F7F5;
+font-family: 'Seaweed Script', cursive;
+}
+
+.headText2{
+font-size: 31px; 
+color: #07F7F5;
+font-family: 'Seaweed Script', cursive;
+/*animation: inout;
+animation-duration: 3s;
+animation-fill-mode: forwards;*/
+
+}
+
+@keyframes inout{
+	0%{top:  -80%}
+	20%{top:  -60%}
+	40%{top:  -40%}
+	60%{top: -20%}
+	100%{top:  0%}
+}
+
+.roundedImage{
+
+	position: relative;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+	margin-bottom: 5%;  
+	border-radius: 0%;
+	border:14px #07F7EE solid;   
+	height: 300px;
+	width: 300px;
+	animation: shapeChanger , inout;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+animation-duration: 10s;
+animation-fill-mode: forwards;
+animation-iteration-count: 1;
+
+transform: rotate(90deg);
+}
+
+@keyframes shapeChanger{
+	0%{border-radius: 0%}
+	25%{border-radius: 50%}
+	100%{border-radius: 100%;}
+	75%{border-radius: 50%}
+	100%{border-radius: 0%}
+}
+
+.normalText{
+	color: #fff;
+	font-size: 2vw; 
+}
+
+.headin{
+	color: #07F71C;
+	font-size: 4vw;
+}
+
+
+@media (max-width: 1150px){
+
+
+.container{
+	flex-direction: column;
+}
+
+.headText{
+	position: relative;
+	text-align: center;
+	font-size: 7vw;
+}
+
+.roundedImage{
+
+	height: 340px;
+	width: 340px;
+	animation: shapeChanger;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.wrapper , .wrapper2{
+
+	border: 3px #fff solid;
+	opacity: 1;
+
+}
+
+
+.headin{
+	font-size: 8vw;
+}
+
+.normalText{
+	color: #fff;
+	font-size: 5vw; 
+}
+
+}
+
+@media (max-width: 600px) {
+
+	.wrapper , .wrapper2{
+		border: 1px #fff solid;
+}
+
+.headin{
+	font-size: 10vw;
+}
+
+.normalText{
+	color: #fff;
+	font-size: 7vw; 
+}
+
+
+}
+

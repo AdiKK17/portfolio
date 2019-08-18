@@ -1,40 +1,163 @@
 body{
 	background: #000;
+	/*animation: backColor;
+	animation-duration: 40s;
+	animation-iteration-count: infinite;
+	margin: none;*/
+}
+
+@keyframes backColor{
+	0%{border-color:    #000;}
+	20%{border-color:    #D3F303;}
+	40%{border-color:    #F34103;}
+	50%{border-color:    #66F303;}
+	70%{border-color:    #03F3DF;}
+	90%{border-color:    #03A1F3;}
+	100%{border-color:    #000;}
 }
 
 
-.container {
-	border: 2px #fff solid;
+.box{
+	border-bottom: 10px #000 solid;
+	animation: backColor;
+	animation-duration: 40s;
+	animation-iteration-count: infinite;
+	margin: none;
+}
+
+.container {	
+	border: 1px #fff solid;
 	padding: 5px;
-	background-color: #07CEFC; 
+	background-image: url("../images/nash4.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #07CEFC;
+	position: absolute; 
+	margin: 0.5%;
+
 }
 
 .headText{
-font-size: 100px; 
+	margin: none;
+	position: relative;
+	float: right;
+	right: 25%;
+	top: 10%;
+	margin-top: 9%; 
+
+/*font-size: 100px; 
 float: right;
 margin-right: 20%;
-margin-top: 20%; 
-font-size: 50px;
-font-family: 'Seaweed Script', cursive;
+margin-top: 20%; */
+font-size: 80px;
+font-family: 'Great Vibes';
+
+}
+
+.headin{
+	margin: 3%;
+	font-size: 60px; 
+	font-family: "Great Vibes";
+	animation: floatAnim 30s infinite alternate;
+	animation-timing-function: linear;   
+}
+
+@keyframes floatAnim{
+
+0%{margin-left: 3%}
+50%{margin-left: 65%; }
+100%{margin-left: 3% }
 
 }
 
 .roundedImage{
-	margin-bottom: 5%;  
+	margin: none;
+	position: relative;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+	margin-left: 15%;
+	margin-top: 3%;  
+	margin-bottom: 3%;  
 	border-radius: 0%;
-	border:4px #fff solid; 
+	border:14px #1CB4D7 solid;   
 	height: 300px;
 	width: 300px;
 	animation: shapeChanger;
-	animation-duration: 3s;
+	animation-duration: 5s;
 	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 }
 
 @keyframes shapeChanger{
 	0%{border-radius: 0%}
 	25%{border-radius: 50%}
-	100%{border-radius: 100%;background-image: url("../images/homeBackground2.jpg");}
+	50%{border-radius: 100%;}
 	75%{border-radius: 50%}
 	100%{border-radius: 0%}
+}
+
+.para{
+	font-size: 23px;
+	color: #E9E9E9;
+}
+
+
+@media (max-width: 1100px){
+	.roundedImage{
+		height: 250px;
+		width: 250px;
+		border:10px #1CB4D7 solid;
+		margin-left: 10%; 
+
+	}
+
+	.headText{
+
+     position: relative;
+	float: right;
+	right: 10%;
+	top: 10%;
+	margin-top: 9%;
+
+	}
+
+	.para{
+		font-size: 40px;
+		margin-top: 15%; 
+		color: #fff;
+	}
+}
+
+
+@media (max-width:500px){
+
+.roundedImage{
+	height: 200px;
+	width: 200px;
+	border: 7px #1CB4D7 solid;
+}
+
+.para{
+	margin-top:30%;
+	}
+
+.headText{
+	right: 0%;
+	float: none;
+	margin-left: 15%;
+}
+
+.headin{
+	margin: 3%;
+	font-size: px; 
+	font-family: "Great Vibes";
+	animation: none;  
+}
+
+
+
 }
