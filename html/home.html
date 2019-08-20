@@ -9,12 +9,15 @@
    <link rel="stylesheet" type="text/css" href="../css/homeStyle.css">
 <link href="https://fonts.googleapis.com/css?family=Skranji&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
 
+          <!--   navBar -->
+
 <div>
-      <h2 class="centreElement textStyling" style="font-size: 4vw;margin: 10px;">My PortFolio</h2>
+      <h2 class="centreElement textStyling" style="font-size: 2em;margin: 10px;">My PortFolio</h2>
 </div>
 
 
@@ -24,18 +27,50 @@
     
     <li> <a href="personal.html">Personal</a> </li>
     <li> <a href="Professional.html">Professional</a> </li> 
-    <li> <a  href="personal.html">Contact</a> </li>
-    <li> <a  href="personal.html">About Me</a> </li>
+    <li> <a  href="#CJ7">Contact</a> </li>
+    <li> <a  href="#CJ">About Me</a> </li>
 
    </ul>
 
 
-<div class="centreElement transparentContainer" style="margin: 2% 0 ;padding: 5%;">
+
+
+
+            <!-- centre image and headings  -->
+
+<div class="wrapper transparentContainer" style="margin: 4% 0 ;padding: 5%;">
+
+    <div class="centreElement nestedGrid">
     
-    <img id="homeImage">
+    <h2 style="background: rgba(200, 200, 200, 0.5);align-self: flex-start;">RELENTLESS</h2>
+    <h2 style="background: rgba(200, 200, 200, 0.5);align-self: flex-end;">EXQUISITE</h2>
+
+    </div>
+     
+     <div class="centreElement" style="background: rgba(200, 200, 200, 0.1)">
+     <img id="homeImage">
+     </div>
+
+
+     <div class="centreElement nestedGrid">
+    
+    <h2 style="background: rgba(200, 200, 200, 0.5);align-self: flex-start;">DEFINITIVE</h2>
+    <h2 style="background: rgba(200, 200, 200, 0.5);align-self: flex-end;">MERCURIAL</h2>
+
+    </div>
+     
 
 </div>
 
+
+<!-- <div class="centreElement transparentContainer" style="margin: 2% 0 ;padding: 5%;">
+    
+    <img id="homeImage">
+
+</div> -->
+
+
+       <!--  about me code -->
 
 <div class="transparentContainer centreElement">
 
@@ -44,35 +79,40 @@
         About Me:
     </h3> 
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, aut voluptas eligendi. Laboriosam sequi delectus, voluptatem dolores. Neque nisi reiciendis aliquid quasi, fuga cupiditate, temporibus commodi distinctio quos, id tempora!</p>
 
+    <p id="CJ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, aut voluptas eligendi. Laboriosam sequi delectus, voluptatem dolores. Neque nisi reiciendis aliquid quasi, fuga cupiditate, temporibus commodi distinctio quos, id tempora!</p>
 
 </div>
 
-<!--  <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quis vel amet. Dolor provident eum nesciunt consequatur nostrum voluptas accusamus voluptates repellendus et obcaecati? Recusandae ullam non sapiente cumque magnam!</P>  -->
- 
-
-<!-- <script>
-document.getElementById("demo").innerHTML = "Hello World!";
-</script> -->
 
 
-<!-- <div class="row">
-    
-   <center>
-        <h1 style="color: #fff; font-family: 'Skranji', cursive;"> Contact Info </h1>   
-    </center> 
+<!-- Contact me: code -->
 
-    <center>
-    <div>
-        <img src="../images/insta.jpg" class="size">
-        <img src="../images/facebook.png" class="size">
-        <img src="../images/whatsapp.png" class="size">
-        <img src="../images/mail.png" class="size">
+
+<div class="transparentContainer centreElement" style="margin: 4%">
+
+
+     <h3 class="textStyling" style="font-size: 30px;margin-bottom:1%">
+        Contact Me:
+    </h3> 
+
+   <div>
+        <div >
+
+    <p id="CJ7" class="nestedGridContact"  style="grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 7em;">
+        
+        <a href="#"><img src="../images/mail.png" style="width: 150px"></a>
+             <a href="#"><img src="../images/insta.jpg" style="width: 150px"></a>
+              <a href="#"><img src="../images/facebook.png" style="width: 150px"></a>
+               <a href="#"><img src="../images/whatsapp.png" style="width: 150px"></a>
+
+    </p>
+
+        </div>
     </div>
-</center>
+</div>
 
-</div> -->
 
 
 </body>
