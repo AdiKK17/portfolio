@@ -1,0 +1,59 @@
+body{
+	background: #000;
+}
+
+.centerImage{
+	margin: 50px;
+	text-align: center;
+
+}
+
+#container{
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	background: url(../images/ball.png);	
+	background-size: cover;
+	border-radius:50%;
+}
+
+
+#ballPosition{
+	position: absolute;
+	top: 590px;
+	left: 715px;
+	
+	/*topRight corner position of the ball */
+	/*top: 260px;
+	left: 1045px;*/
+
+	/*bottomRight corner position of the ball 
+	left: 1015px;
+	top: 415px;*/
+
+	/*topLeft corner position of the ball
+	top: 260px;
+	left: 430px; */
+
+	/*bottomLeft corner position of the ball
+	left: 480px;
+	top: 415px;*/
+}
+
+.textPosition{
+	position: absolute;
+	top: 20%;
+	left: 38%;
+}
+
+.goalText{
+	font-family: 'Oswald', sans-serif;
+	color: #07F5F7;
+	font-size: 11vw;
+}
+
+@media (min-width: 1440px){
+
+	
+
+}

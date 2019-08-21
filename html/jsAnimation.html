@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="../css/jsAnimationStyle.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+  <title>Js Animation</title>
+</head>
+<body>
+
+<div class="centerImage">
+    
+    <img src="../images/goal.jpg">
+
+</div>
+
+   <div id="ballPosition" onclick="myMove()">
+    <img id="container">
+  </div>
+
+    <div class="textPosition">
+    
+    <h1 id="melo" class="goalText" style="opacity: 0.0">GOAL!!</h1>
+
+  </div> 
+ 
+
+
+  <script language="Javascript">
+    
+    function myMove(){
+
+    var ball = document.getElementById('ballPosition');
+    var ballSize = document.getElementById("container");
+
+    ball.style.opacity = "1";
+    var leftBallPos = 715;
+    var topBallPos = 590;
+    var id1,id2,id3,id4,id5;
+
+
+    var id = setInterval(topcorner,2);
+
+      function topcorner() {
+
+      if(topBallPos == 260){
+
+        ballSize.style.width = 50 + 'px';
+        ballSize.style.height = 50 + 'px';  
+
+        clearInterval(id);
+        var id1 = setInterval(falling,6);
+
+      }else{
+
+        if(topBallPos != 260){
+          topBallPos--;
+        }
+        if(leftBallPos != 1045){
+           leftBallPos++;
+        }
+
+        ball.style.top = topBallPos + 'px';
+        ball.style.left = leftBallPos + 'px';
+
+      }
+
+
+    }
+
+     
+     function falling(){
+
+        if(topBallPos > 415){
+        clearInterval(id1);
+        var id2 = setInterval(littleUp,8);
+      }
+      else{
+        
+        if(topBallPos <= 415){
+          topBallPos++;
+        }
+
+         ball.style.top = topBallPos + 'px';
+
+      }
+
+    }
+
+    function littleUp(){
+
+      if(topBallPos < 380){
+
+        ball.style.opacity = "0.0";
+          golazo(); 
+          console.log("polo");
+
+        clearInterval(id2);
+      }
+      else{
+
+        if(topBallPos >= 380){
+          topBallPos--;
+        }
+
+         ball.style.top = topBallPos + 'px';
+
+      }
+
+    }
+
+
+  
+
+         function golazo(){
+
+              document.getElementById('melo').style.opacity = "1";
+              var i;
+              for(i=0;i<1000;i++){}
+
+          }
+
+        // function reset(){
+
+        //   var leftBallPos = 715;
+        //   var topBallPos = 590;
+        //    document.getElementById('melo').style.opacity = "0.0";
+        //    ball.style.opacity = "1";
+
+        // }
+
+  }
+
+
+
+  </script>
+
+  <p id="demo" style="color: #fff"></p>
+
+</body>
+</html>
